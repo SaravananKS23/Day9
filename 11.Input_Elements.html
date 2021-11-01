@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>List</title>
+<style>
+body{
+  background-color: aliceblue;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}</style>
+</head>
+<body>
+<h2>User Information</h2>
+<label for="name">User Name:</label>
+<input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+<br> <br>       DOB: <input id="id4" type="date" value="2022-04-26"><br/>
+<br>  Upload your Picture: <br><input id="id7" type="file" accept=".pdf" multiple><br/>
+       <br/>
+<div>
+<b> Gender:</b> <br/>  <input type="radio" id="male" name="male" value="male">
+  <label for="male">Male</label><br/>
+  <input type="radio" id="female" name="female" value="female">
+  <label for="female">Female</label><br/>
+</div>
+<br/>
+<div>
+<b>Skill's: </b> <br>
+  <label for="volume">HTML&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</label>
+  <input type="range" id="id14" name="volume"
+         min="0" max="11" step="8"><br/>
+         <label for="css">CSS&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</label>
+         <input type="range" id="id14a" name="css"
+                min="0" max="11" step="10"><br/>
+                <label for="js">JAVASCRIPT&#160;</label>
+                <input type="range" id="id14b" name="js"
+                       min="0" max="11" step="2"><br/>
+                    </div>
+
+<br/>
+<br/>
+Favourite Color: <input id="id3" type="color" value="#fff000"><br/>
+<br/>
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required placeholder="123-456-7890"><br/>
+       <br/>
+       <br/>
+       <label for="appt">Contact Timing:</label>
+
+       <input type="time" id="appt" name="appt"
+              min="09:00" max="18:00" required>
+       
+       <small>9am to 6pm</small>
+       <br/>
+       <br/>
+       <label for="url">Enter your Profile URL:</label>
+
+       <input type="url" name="url" id="url"
+              placeholder="https://guvi.com"
+              pattern="https://.*" size="30"
+              required><br/>
+<br>
+<b>Shift you like:</b> <br>
+  <input id="id2a" type="checkbox"> Day<br/>
+<input id="id2b" type="checkbox"> Early Morning<br/>
+<input id="id2c" type="checkbox"> Night<br/>
+<br>
+DOJ: <input id="id5" type="datetime-local" value="2021-10-31T22:30"><br/> <br>
+    <div>
+      <label for="content">About your self:</label>
+      <textarea id="content" name="content" cols="60" rows="5">Enter Here</textarea>
+    </div>
+    <input type="hidden" id="empId" name="empId" value="34657">
+  <br/> <br>
+Notice Period (Month): <input id="id11" type="number" min="1" max="4" value="1"><br/>
+<br>
+              <label for="tech-week">Choose a week for Techical Round:</label>
+              <input type="week" name="week" id="tech-week"
+                     min="2022-W18" max="2022-W20" required>
+<br> <br>
+<hr>
+<b>Login Details:</b> <br> <br>                    <form>
+                      <label for="name">User Name:</label>
+                    <input type="text" id="name" name="name" required
+                           minlength="4" maxlength="8" size="10">
+                    <br/>
+                    <br/>
+                    <label for="emailid">Email Id:</label>
+                    <input id="id6" type="email" name="emailid" value="saran@guvi.com"><br/>
+                    <br/>
+                    <label for="pin">PIN: </label><input id="id12" name="pin" type="password" pattern="[0-9]{4,8}" inputmode="numeric" minlength="4"
+                    maxlength="8" size="8" autocomplete="on" required>
+                    <br/>
+                    <br><input id="id9" type="image" alt="logo" width="10%" src="https://raw.githubusercontent.com/mdn/learning-area/master/html/forms/image-type-example/login.png"><br/>
+                    <br/>
+                    <input id="id15" type="reset" value="Reset"><br/>
+                    </form>
+<hr>             
+<br/>
+<br/>
+Please Submit the Form: <input type="submit" value="Submit"><br/>
+
+                  </body>
+</html>

@@ -7,27 +7,76 @@
 <title>List</title>
 </head>
 <body>
-<input type="button"><br/>
-<input type="checkbox"><br/>
-<input type="color"><br/>
-<input type="date"><br/>
-<input type="datetime-local"><br/>
-<input type="email"><br/>
-<input type="file"><br/>
-<input type="hidden"><br/>
-<input type="image"><br/>
-<input type="month"><br/>
-<input type="number"><br/>
-<input type="password"><br/>
-<input type="radio"><br/>
-<input type="range"><br/>
-<input type="reset"><br/>
-<input type="search"><br/>
-<input type="submit"><br/>
-<input type="tel"><br/>
-<input type="text"><br/>
-<input type="time"><br/>
-<input type="url"><br/>
-<input type="week"><br/>
+    <input id="id1" type="button" value="Button"><br/>
+<input id="id2" type="checkbox" checked><br/>
+<input id="id3" type="color" value="#fff000"><br/>
+<input id="id4" type="date" value="2021-10-31"><br/>
+<input id="id5" type="datetime-local" value="2021-10-31T22:30"><br/>
+<input id="id6" type="email" value="saran@guvi.com"><br/>
+<input id="id7" type="file" accept=".pdf" multiple><br/>
+    <div>
+      <label for="title">Post title:&#160;&#160;&#160;&#160; &#160;</label>
+      <input type="text" id="title" name="title" value="My excellent blog post">
+    </div>
+    <div>
+      <label for="content">Post content:</label>
+      <textarea id="content" name="content" cols="60" rows="5">This is the content of my excellent blog post. I hope you enjoy it!</textarea>
+    </div>
+    <div>
+      <button type="submit">Update post</button>
+    </div>
+    <input type="hidden" id="postId" name="postId" value="34657">
+  <br/>
+  <input id="id9" type="image" alt="logo" width="10%" src="https://raw.githubusercontent.com/mdn/learning-area/master/html/forms/image-type-example/login.png"><br/>
+<input id="id10" type="month" min="1988-01" value="1989-26"><br/>
+<input id="id11" type="number" min="5" max="10" value="8"><br/>
+<form>
+  <label for="pin">PIN: </label><input id="id12" name="pin" type="password" pattern="[0-9]{4,8}" inputmode="numeric" minlength="4"
+maxlength="8" size="8" autocomplete="on" required><input type="submit" value="Submit"><br/>
+<div>
+  <input type="radio" id="id13" name="saran" value="Saravanan"
+         checked>
+  <label for="saran">Saravanan</label>
+</div>
+<div>
+  <input type="range" id="id14" name="volume"
+         min="0" max="11" step="2"><br/>
+  <label for="volume">Volume</label>
+</div>
+<br/>
+<input id="id15" type="reset" value="Reset"><br/>
+</form>
+  <label for="id16">Search the site:</label>
+<input type="search" id="id16" name="q"
+       aria-label="Search through site content">
+<button>Search</button>
+<br/>
+<input id="id17" type="submit" value="Submit_Button"><br/>
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required placeholder="123-456-7890"><br/>
+       <label for="name">Text Box:</label>
+
+       <input type="text" id="name" name="name" required
+              minlength="4" maxlength="8" size="10">
+       <br/>
+       <label for="appt">Choose a time for your meeting:</label>
+
+       <input type="time" id="appt" name="appt"
+              min="09:00" max="18:00" required>
+       
+       <small>Office hours are 9am to 6pm</small>
+       <br/>
+       <label for="url">Enter an https:// URL:</label>
+
+       <input type="url" name="url" id="url"
+              placeholder="https://guvi.com"
+              pattern="https://.*" size="30"
+              required><br/>
+              <label for="camp-week">Choose a week in May or June:</label>
+              <input type="week" name="week" id="camp-week"
+                     min="2018-W18" max="2018-W26" required>
+              </form>
 </body>
 </html>
